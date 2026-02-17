@@ -1,7 +1,8 @@
 # SAP BW ETL Process Description
 
 ## Objective
-Design and implementation of structured ETL processes in SAP BW to transform flat file source data into validated, reporting-ready DataMart structures.
+Design and implementation of structured ETL processes in SAP BW to transform flat file source data into validated, reporting-ready DataMart structures. This project demonstrates practical data warehouse modeling and ETL structuring in an SAP BW environment.
+
 
 ---
 
@@ -47,9 +48,3 @@ Flat File (PC_FILE)
 ## Reporting Layer
 
 The final DataMart layer enables structured KPI reporting based on validated and harmonized data flows, ensuring data consistency and analytical reliability.
-
----
-
-## Process Documentation
-
-For a detailed breakdown of the implemented ETL flows (Sales & Master Data), see `etl-process-description.md`.
