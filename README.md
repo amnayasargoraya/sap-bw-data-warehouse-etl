@@ -1,44 +1,48 @@
-# SAP BW Data Warehouse – ETL & Reporting
+# SAP BW ETL Process Description
 
 ## Objective
-Implementation of a structured ETL process within SAP BW to create a validated and reliable reporting model.
+Implementation of structured ETL processes in SAP BW to transform flat file data into validated reporting-ready DataMart structures.
 
 ---
 
-## My Contribution
-- Configured DataSource objects
-- Designed Data Transfer Processes (DTP)
-- Implemented transformation rules
-- Built structured DataMart layer
-- Created reporting queries
-- Ensured data validation and consistency
+## ETL Flow – Sales Data
+
+The following flow illustrates the extraction and transformation process for sales data.
+
+Flat File (PC_FILE)
+→ DataSource
+→ DTP
+→ Transformation
+→ DataMart / InfoProvider
+
+![Sales ETL Flow](etl-flow-sales.png)
 
 ---
 
-## Core Components
+## ETL Flow – Master Data
+
+The master data flow includes structured loading and harmonization into reporting objects.
+
+Flat File (PC_FILE)
+→ DataSource
+→ DTP
+→ Transformation
+→ InfoObject / DataMart
+
+![Master Data ETL Flow](etl-flow-masterdata.png)
+
+---
+
+## Key Concepts Implemented
+
 - DataSource configuration
-- DTP (Data Transfer Process)
-- Transformation logic
-- Error handling
-- DataMart modeling
-- CompositeProvider design
-- Query reporting
-
----
-
-## Architecture Flow
-Source Data → DataSource → DTP → Transformation → DataMart → Query
-
----
-
-## Technologies
-- SAP BW
-- ETL process design
-- Data modeling
+- Data Transfer Process (DTP)
+- Transformation logic & field mapping
 - Data validation
-- Query reporting
+- Structured reporting layer design
 
 ---
 
-## Author
-Amna Yasar Goraya
+## Reporting Layer
+
+The final DataMart layer enables consistent KPI reporting based on validated and transformed data.
