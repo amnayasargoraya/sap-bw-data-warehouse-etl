@@ -1,19 +1,19 @@
 # SAP BW ETL Process Description
 
 ## Objective
-Implementation of structured ETL processes in SAP BW to transform flat file data into validated reporting-ready DataMart structures.
+Design and implementation of structured ETL processes in SAP BW to transform flat file source data into validated, reporting-ready DataMart structures.
 
 ---
 
 ## ETL Flow – Sales Data
 
-The following flow illustrates the extraction and transformation process for sales data.
+The sales data flow illustrates the structured extraction, transformation and loading process within SAP BW.
 
-Flat File (PC_FILE)
-→ DataSource
-→ DTP
-→ Transformation
-→ DataMart / InfoProvider
+Flat File (PC_FILE)  
+→ DataSource  
+→ Data Transfer Process (DTP)  
+→ Transformation (field mapping & validation)  
+→ DataMart / InfoProvider  
 
 ![Sales ETL Flow](etl-flow-sales.png)
 
@@ -21,13 +21,13 @@ Flat File (PC_FILE)
 
 ## ETL Flow – Master Data
 
-The master data flow includes structured loading and harmonization into reporting objects.
+The master data flow focuses on harmonization and structured loading into reporting-relevant objects.
 
-Flat File (PC_FILE)
-→ DataSource
-→ DTP
-→ Transformation
-→ InfoObject / DataMart
+Flat File (PC_FILE)  
+→ DataSource  
+→ Data Transfer Process (DTP)  
+→ Transformation (mapping & consistency checks)  
+→ InfoObject / DataMart  
 
 ![Master Data ETL Flow](etl-flow-masterdata.png)
 
@@ -35,14 +35,21 @@ Flat File (PC_FILE)
 
 ## Key Concepts Implemented
 
-- DataSource configuration
-- Data Transfer Process (DTP)
-- Transformation logic & field mapping
-- Data validation
-- Structured reporting layer design
+- DataSource configuration  
+- Data Transfer Process (DTP) setup  
+- Transformation rules & field mapping  
+- Data validation & consistency checks  
+- DataMart modeling  
+- Reporting layer structuring  
 
 ---
 
 ## Reporting Layer
 
-The final DataMart layer enables consistent KPI reporting based on validated and transformed data.
+The final DataMart layer enables structured KPI reporting based on validated and harmonized data flows, ensuring data consistency and analytical reliability.
+
+---
+
+## Process Documentation
+
+For a detailed breakdown of the implemented ETL flows (Sales & Master Data), see `etl-process-description.md`.
